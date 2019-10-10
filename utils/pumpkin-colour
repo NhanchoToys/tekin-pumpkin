@@ -1,0 +1,14 @@
+#!/bin/bash
+
+countixa=0
+if test -z $1
+then
+    max=128
+else
+    max=$1
+fi
+while [ $countixa -lt $max ]
+do
+    echo "\033[${countixa}m${countixa}: Hello World!\033[0m"
+    countixa=`expr $countixa + 1`
+done
