@@ -9,6 +9,6 @@ else
 fi
 while [ $countixa -lt $max ]
 do
-    echo -e "\033[${countixa}m${countixa}: Hello World!\033[0m"
+    echo -e "\033[${countixa}m${countixa}: Hello World!\033[0m \t\\\\033[${countixa}m"
     countixa=`expr $countixa + 1`
 done
