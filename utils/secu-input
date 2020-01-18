@@ -1,0 +1,12 @@
+#!/bin/bash
+# $1 length
+chargrp=''
+t=1
+while [ $t -le $1 ]
+do
+    read -n1 char
+    chargrp=$chargrp$char
+    echo -ne "\b"
+    t=$(expr $t + 1)
+done
+echo $chargrp

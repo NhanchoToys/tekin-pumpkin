@@ -1,0 +1,16 @@
+#!/bin/bash
+# $1 - preText
+# $2 - times
+# $3 - progbarChar
+# $4 - endText
+
+count=0
+echo "$1"
+while [ $count -lt $2 ]
+do
+    echo -n $3
+    count=$(expr $count + 1)
+done
+echo
+echo $4
+exit
